@@ -1,0 +1,25 @@
+.heading{
+  &--primary,&--secondary{
+    font-family: $Raleway;
+    color: $Very-Dark-Blue;
+  }
+  &--primary{
+    font-size: 1.5rem;
+    line-height: 1.5;
+    @media ($tablet){
+      font-size: 2rem;
+    }
+  }
+  &--secondary{
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    @media ($tablet){
+      font-size: 2rem;
+    }
+    @media ($desktop){
+      text-align: left;
+      font-size: 1.8rem;
+    }
+  }
+}

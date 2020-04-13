@@ -1,0 +1,52 @@
+.stay-productive{
+  background-color: $Light-Grayish-Blue;
+  padding: 4rem 0;
+  &__content{
+    gap: 3rem;
+    display: grid;
+    @media ($desktop){
+      gap: 5rem;
+      grid-template-columns: repeat(2,1fr);
+      align-items: center;
+    }
+  }
+  &__info{
+    margin-top: 5rem;
+    display: grid;
+    justify-items: center;
+    @media ($desktop){
+      grid-row: 1;
+      margin-top: 0;
+      justify-items: start;
+    }
+  }
+  &__text{
+    line-height: 1.5;
+    font-size: .85rem;
+    margin: .5rem 0;
+    color: $Desaturated-Blue;
+    @media ($tablet){
+      font-size: .95rem;
+    }
+    @media ($desktop){
+      width: 85%;
+      font-size: .78rem;
+    }
+  }
+  &__cta{
+    display: inline-flex;
+    padding-bottom: .3rem;
+    margin-top: 2rem;
+    border-bottom: 1px solid $Moderate-Cyan;
+  }
+  &__work{
+    margin-right: .5rem;
+    font-size: .8rem;
+    color: $Moderate-Cyan;
+    text-decoration: none;
+  }
+  @media ($desktop){
+    padding-top: 0;
+    padding-bottom: 4rem;
+  }
+}

@@ -1,0 +1,52 @@
+.c-newsletter{
+  background-color: $Desaturated-Blue;
+  color: white;
+  text-align: center;
+  padding: 4rem 0;
+  &__content{
+    display: grid;
+    justify-items: center;
+    @media ($desktop){
+      grid-template-columns: repeat(2,1fr);
+    }
+  }
+  &__title{
+    font-family: $Raleway;
+    font-size: 1.2rem;
+    margin: 0;
+    @media ($desktop){
+      font-size: 1.5rem;
+    }
+  }
+  &__text{
+    width: 90%;
+    font-size: .9rem;
+    line-height: 1.7;
+    @media ($desktop){
+      font-size: 1rem;
+    }
+  }
+  &__group{
+    width: 80%;
+  }
+  &__email{
+    width: 100%;
+    border-radius: .3rem;
+    border: 1px solid $Very-Dark-Blue;
+    padding: .6rem 1rem;
+    font-size: .8rem;
+    margin-bottom: .7rem;
+    &::placeholder{
+      font-size: .7rem;
+      color: $Light-Gray;
+    }
+  }
+  &__cta{
+    @media ($desktop){
+      display: inline-block;
+    }
+  }
+  @media ($desktop){
+    text-align: left;
+  }
+}

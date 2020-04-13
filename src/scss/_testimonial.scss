@@ -1,0 +1,51 @@
+.c-testimonial{
+  background-color: white;
+  margin: 0;
+  padding: 2rem 1.5rem;
+  border-radius: .3rem;
+  box-shadow: 2px 4px 10px rgba(#000,.15);
+  margin-top: 3rem;
+  width: 19rem;
+  &__text{
+    margin: 0;
+    font-size: .7rem;
+    line-height: 1.7;
+    color: $Very-Dark-Blue;
+    &:before{
+      content: '';
+      display: block;
+      background-image: url('../images/icon-quotes.svg');
+      width: 1rem;
+      height: 1rem;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      margin-bottom: .5rem;
+    }
+  }
+  &__info{
+    display: flex;
+    margin-top: 1rem;
+  }
+  &__img{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    overflow: hidden;
+    margin-right: .6rem;
+  }
+  &__data{
+    color: $Very-Dark-Blue;
+  }
+  &__author,&__company{
+    font-style: normal;
+    font-family: $Raleway;
+  }
+  &__author{
+    display: block;
+    font-size: .85rem;
+    font-weight:700;
+  }
+  &__company{
+    font-size: .6rem;
+  }
+}

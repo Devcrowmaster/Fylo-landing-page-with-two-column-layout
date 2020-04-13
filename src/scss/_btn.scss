@@ -1,0 +1,19 @@
+.c-btn{
+  color: white;
+  font-family: $Raleway;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: .3rem;
+  font-size: .8rem;
+  transition: opacity 300ms;
+  &:hover{
+    opacity: .8;
+  }
+  &--main{
+    background-color: $Bright-Blue;
+    display: block;
+  }
+  &--large{
+    padding: .7rem 1.7rem;
+  }
+}

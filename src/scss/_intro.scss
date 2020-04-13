@@ -1,0 +1,69 @@
+.c-intro{
+  text-align: center;
+  display: grid;
+  gap: 3rem;
+  margin-top: 4rem;
+  padding-bottom: 5rem;
+  &__content{
+    display: grid;
+    @media ($tablet){
+      justify-items: center;
+
+    }
+    @media ($desktop){
+      display: block;
+      grid-row: 1;
+      text-align: left;
+    }
+  }
+  &__description{
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    font-size: .9rem;
+    @media ($tablet){
+      width: 60%;
+      margin-top: 1rem;
+    }
+    @media ($desktop){
+      width: 100%;
+      font-size: .95rem;
+      margin: 1rem 0;
+    }
+  }
+  
+  &__group{
+    @media ($tablet){
+      width: 60%;
+    }
+    @media ($desktop){
+      width: 100%;
+      display: flex;
+      align-items: center;
+    }
+  }
+  &__email{
+    width: 100%;
+    border-radius: .3rem;
+    border: 1px solid $Very-Dark-Blue;
+    padding: .55rem 1rem;
+    font-size: .8rem;
+    margin-bottom: 1rem;
+    &::placeholder{
+      font-size: .8rem;
+    }
+    @media ($desktop){
+      margin-bottom: 0;
+      width: 55%;
+      margin-right: 1rem;
+    }
+  }
+  &__cta{
+    @media ($desktop){
+      width: 40%;
+      text-align: center;
+    }
+  }
+  @media ($desktop){
+    grid-template-columns: repeat(2,1fr);
+  }
+}

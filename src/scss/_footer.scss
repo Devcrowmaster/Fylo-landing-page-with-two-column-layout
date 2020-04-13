@@ -1,0 +1,23 @@
+.c-footer{
+  background-color: $Very-Dark-Blue;
+  padding: 3rem 0 2rem 0;
+  position: relative;
+  &__brand{
+    display: inline-block;
+    @media($desktop){
+      position: absolute;
+      top: 5rem;
+    }
+  }
+  &__content{
+    display: grid;
+    gap: 2rem;
+    @media ($desktop){
+      grid-template-columns: 2fr repeat(3,1fr);
+    }
+  }
+
+  @media ($desktop){
+    padding: 10rem 0 3rem 0;
+  }
+}
